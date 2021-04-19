@@ -12,11 +12,7 @@ text-align: center;
 
 
 }
-#logo{
-    padding-top:100px;
-    width: 200px;
-    height: 200px;
-}
+
 footer{
     top: 110%;
     bottom: 0;
@@ -111,7 +107,7 @@ main{
 }
 .mobile-menu__link {
     text-decoration: none;
-    color: #fff;
+    color: black;
 }
 .mobile-menu__checkbox {
     display: none;
