@@ -8,23 +8,21 @@
 <body>
     <header>
         <picture>
-            <img src="https://cdn.logo.com/hotlink-ok/logo-social-sq.png" id="logo" />
+            <img src="https://cdn.logo.com/hotlink-ok/logo-social-sq.png" class="logo" />
         </picture>
+            
         <form class="head">
-            <p><input type="search" name="q" placeholder="Поиск по сайту"> 
+            <input type="search" placeholder="Поиск по сайту"> 
             <input type="submit" value="Найти">
-            <a class="head1">Связаться с нами: +7 999 999 99 99</a>
-            <a class="head1">Мы в соцсетях:</a>
-            <img src="https://cdn.worldvectorlogo.com/logos/vk-1.svg" id="logo" />
-           <img src="https://upload.wikimedia.org/wikipedia/ru/thumb/9/9f/Twitter_bird_logo_2012.svg/1261px-Twitter_bird_logo_2012.svg.png" id="logo" />
-           <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Facebook_Logo_%282019%29.png/1200px-Facebook_Logo_%282019%29.png" id="logo" />
-           </p>
+        </form>
            
-           </form>
-
-        
-     
+        <a class="head1">Связаться с нами: +7 999 999 99 99</a>
+        <a class="head1">Мы в соцсетях:</a>
+        <img src="https://cdn.worldvectorlogo.com/logos/vk-1.svg" class="logo" />
+        <img src="https://upload.wikimedia.org/wikipedia/ru/thumb/9/9f/Twitter_bird_logo_2012.svg/1261px-Twitter_bird_logo_2012.svg.png" class="logo" />
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Facebook_Logo_%282019%29.png/1200px-Facebook_Logo_%282019%29.png" class="logo" />  
     </header>
+
     <nav class="mobile-menu">
         <input type="checkbox" id="checkbox" class="mobile-menu__checkbox">
         <label for="checkbox" class="mobile-menu__btn"><div class="mobile-menu__icon"></div></label>
@@ -63,7 +61,35 @@
       <p>Новость номер 5</p></div>
   </section>
 <main>
-    aaaaaaa
+  <h1> News </h1>
+  <div class="news_block">
+      <p>news№1</p>
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Facebook_Logo_%282019%29.png/1200px-Facebook_Logo_%282019%29.png" class="news_logo" />  
+    </div>
+    <div class="news_block">
+        <p>news№2</p>
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Facebook_Logo_%282019%29.png/1200px-Facebook_Logo_%282019%29.png" class="news_logo" />  
+      </div>
+      <div class="news_block">
+        <p>news№3</p>
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Facebook_Logo_%282019%29.png/1200px-Facebook_Logo_%282019%29.png" class="news_logo" />  
+      </div>
+        <div class="news_block">
+      <p>news№4</p>
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Facebook_Logo_%282019%29.png/1200px-Facebook_Logo_%282019%29.png" class="news_logo" />  
+    </div>
+
+    <div class="add_news">
+        <details>
+            <summary>Добавить</summary>
+        <p> Добавление новости: </p>
+        <form action="/save/{{.Title}}" method="POST" enctype="multipart/form-data">
+            <div><textarea name="body" rows="20" cols="80"></textarea></div>
+            <p> Добавить изображение к новости </p> 
+                <p><input type="file" name="photo" multiple accept="image/*,image/jpeg">
+                <input type="submit" value="Отправить"></p>
+    </div>
+</details>
 </main>
     <footer>
         <i>Сайт создан от балды</i>
